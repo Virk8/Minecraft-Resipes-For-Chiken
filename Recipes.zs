@@ -7,11 +7,11 @@ import mods.create.CuttingManager;
 
 //steel block para ligth steel block
 <recipetype:create:cutting>.addRecipe("ligth_steel_block", <item:s_a_b:lightsteelblock>*2, <item:create_dd:steel_block>, 300);
-<recipetype:create:cutting>.addRecipe("ligth_steelblock", <item:alloyed:steel_block>*2, <item:create_dd:steel_block>, 300);
+<recipetype:create:cutting>.addRecipe("ligth_steelblock", <item:s_a_b:lightsteelblock>*2, <item:alloyed:steel_block>, 300);
 
 //hard steel block
 <recipetype:create:compacting>.addRecipe("hard_steel_block", <constant:create:heat_condition:none>, [<item:s_a_b:hardsteelblock> % 100.0], [<item:create_dd:steel_block>*2, <item:create_dd:coal_piece>], []);
-<recipetype:create:compacting>.addRecipe("hard_steelblock", <constant:create:heat_condition:none>, [<item:alloyed:steel_block> % 100.0], [<item:create_dd:steel_block>*2, <item:create_dd:coal_piece>], []);
+<recipetype:create:compacting>.addRecipe("hard_steelblock", <constant:create:heat_condition:none>, [<item:s_a_b:hardsteelblock> % 100.0], [<item:alloyed:steel_block>*2, <item:create_dd:coal_piece>], []);
 
 //remove
 craftingTable.remove(<item:create_dd:accelerator_motor>);
